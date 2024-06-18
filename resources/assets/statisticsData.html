@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width,viewport-fit=cover,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>Robot Monitoring System</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="header">
+            <a href="#" class="header-logo">Robot Monitoring System</a>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">Robot Monitoring</a>
+                    </li>
+                    <li class="active">
+                        <a href="#">Statistics data</a>
+                    </li>
+                    <li>
+                        <a href="#">Alarm Setting</a>
+                    </li>
+                    <li>
+                        <a href="#">Robot Setting</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="user">
+                <li>Admin(홍길동)</li>
+                <li><a href="#">로그아웃</a></li>
+            </ul>
+        </header>
+
+        <main>
+            <h1>Statistics data</h1>
+            <section class="cm-card">
+                <div class="cm-card-header">
+                    <div class="cm-search-wrap">
+                        <div class="date-group">
+                            <h4>Date</h4>
+                            <div class="date-area">
+                                <input type="date">
+                                <span>-</span>
+                                <input type="date">
+                            </div>
+                        </div>
+                        <div class="select-group">
+                            <select name="" id="">
+                                <option value="">감시 로봇 선택</option>
+                            </select>
+                        </div>
+                        <div class="select-group">
+                            <select name="" id="">
+                                <option value="">모니터링 값</option>
+                            </select>
+                        </div>
+                        <div class="select-group">
+                            <select name="" id="">
+                                <option value="">검색 조건</option>
+                            </select>
+                        </div>
+                        <button type="button" class="btn-search">검색</button>
+                    </div>
+                    <button type="button" class="btn-excel">엑셀 다운로드</button>
+                </div>
+                <div class="cm-table scroll-y max-h">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>No.</th>
+                                <th>수집일</th>
+                                <th>Robot Name</th>
+                                <th>모니터링 값</th>
+                                <th>JT1</th>
+                                <th>JT2</th>
+                                <th>JT3</th>
+                                <th>JT4</th>
+                                <th>JT5</th>
+                                <th>JT6</th>
+                                <th>JT7</th>
+                                <th>JT8</th>
+                                <th>Alarm</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>9</td>
+                                <td>2024/05/10  10:12:24.2</td>
+                                <td>#1. Robot</td>
+                                <td>모터 전류(Arms) </td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td></td>
+                                <td></td>
+                                <td>#1 Robot JT1 CRI</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>2024/05/10  10:12:24.2</td>
+                                <td>#1. Robot</td>
+                                <td>모터 전류(Arms) </td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td></td>
+                                <td></td>
+                                <td>#1 Robot JT1 CRI</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>2024/05/10  10:12:24.2</td>
+                                <td>#1. Robot</td>
+                                <td>모터 전류(Arms) </td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td></td>
+                                <td></td>
+                                <td>#1 Robot JT1 CRI</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>2024/05/10  10:12:24.2</td>
+                                <td>#1. Robot</td>
+                                <td>모터 전류(Arms) </td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td></td>
+                                <td></td>
+                                <td>#1 Robot JT1 CRI</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>2024/05/10  10:12:24.2</td>
+                                <td>#1. Robot</td>
+                                <td>모터 전류(Arms) </td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td></td>
+                                <td></td>
+                                <td>#1 Robot JT1 CRI</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>2024/05/10  10:12:24.2</td>
+                                <td>#1. Robot</td>
+                                <td>모터 전류(Arms) </td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td></td>
+                                <td></td>
+                                <td>#1 Robot JT1 CRI</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>2024/05/10  10:12:24.2</td>
+                                <td>#1. Robot</td>
+                                <td>모터 전류(Arms) </td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td></td>
+                                <td></td>
+                                <td>#1 Robot JT1 CRI</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>2024/05/10  10:12:24.2</td>
+                                <td>#1. Robot</td>
+                                <td>모터 전류(Arms) </td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td></td>
+                                <td></td>
+                                <td>#1 Robot JT1 CRI</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>2024/05/10  10:12:24.2</td>
+                                <td>#1. Robot</td>
+                                <td>모터 전류(Arms) </td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td></td>
+                                <td></td>
+                                <td>#1 Robot JT1 CRI</td>
+                            </tr>
+                            <tr>
+                                <td>9</td>
+                                <td>2024/05/10  10:12:24.2</td>
+                                <td>#1. Robot</td>
+                                <td>모터 전류(Arms) </td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td></td>
+                                <td></td>
+                                <td>#1 Robot JT1 CRI</td>
+                            </tr>
+
+                            <tr>
+                                <td>9</td>
+                                <td>2024/05/10  10:12:24.2</td>
+                                <td>#1. Robot</td>
+                                <td>모터 전류(Arms) </td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td></td>
+                                <td></td>
+                                <td>#1 Robot JT1 CRI</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true"><i class="ico i-arrow-left"></i></span>
+                            </a>
+                        </li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true"><i class="ico i-arrow-right"></i></span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <div class="modal fade" id="userNewDataModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered cm-modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">사용자 신규 생성</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="cm-table">
+                        <table>
+                            <tr>
+                                <th>사용자 이름</th>
+                                <td>
+                                    <input type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>소속</th>
+                                <td>
+                                    <input type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>ID</th>
+                                <td>
+                                    <input type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>PW</th>
+                                <td>
+                                    <input type="password">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>전화번호</th>
+                                <td>
+                                    <input type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>이메일</th>
+                                <td>
+                                    <input type="text">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">취소</button>
+                    <button type="button" class="btn btn-primary">신규생성</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="userEditDataModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered cm-modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">사용자 수정</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="cm-table">
+                        <table>
+                            <tr>
+                                <th>사용자 이름</th>
+                                <td>
+                                    <input type="text" value="홍길동">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>소속</th>
+                                <td>
+                                    <input type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>ID</th>
+                                <td>
+                                    <input type="text" value="hong12341">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>PW</th>
+                                <td>
+                                    <input type="password">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>전화번호</th>
+                                <td>
+                                    <input type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>이메일</th>
+                                <td>
+                                    <input type="text">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">취소</button>
+                    <button type="button" class="btn btn-primary">수정</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="userDelDataModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered cm-modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">사용자 삭제</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="cm-table">
+                        <table>
+                            <tr>
+                                <th>사용자 이름</th>
+                                <td>
+                                    <input type="text" value="홍길동" disabled>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>소속</th>
+                                <td>
+                                    <input type="text" value="MI 공정팀" disabled>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>ID</th>
+                                <td>
+                                    <input type="text" value="acab12345" disabled>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>PW</th>
+                                <td>
+                                    <input type="password" value="acab12345" disabled>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>전화번호</th>
+                                <td>
+                                    <input type="text" value="010-1234-1234" disabled>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>이메일</th>
+                                <td>
+                                    <input type="text" value="acvdf@bnaver.com" disabled>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">취소</button>
+                    <button type="button" class="btn btn-primary">신규생성</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="lib/bootstrap.bundle.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>

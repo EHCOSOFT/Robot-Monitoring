@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width,viewport-fit=cover,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>Robot Monitoring System</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="header">
+            <a href="#" class="header-logo">Robot Monitoring System</a>
+            <nav>
+                <ul>
+                    <li class="active">
+                        <a href="#">Robot Monitoring</a>
+                    </li>
+                    <li>
+                        <a href="#">Statistics data</a>
+                    </li>
+                    <li>
+                        <a href="#">Alarm Setting</a>
+                    </li>
+                    <li>
+                        <a href="#">Robot Setting</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="user">
+                <li>Admin(홍길동)</li>
+                <li><a href="#">로그아웃</a></li>
+            </ul>
+        </header>
+
+        <main>
+            <h1>Robot Monitoring</h1>
+            <div class="row">
+                <div class="col-2">
+                    <section class="cm-card">
+                        <div class="cm-card-header">
+                            <h2>모니터링 대상 로봇 선택</h2>
+                        </div>
+                        <div class="select-group">
+                            <select name="" id="">
+                                <option value="#1">#1 Robot</option>
+                            </select>
+                        </div>
+                    </section>
+                </div>
+                <div class="col-6">
+                    <section class="cm-card">
+                        <div class="cm-card-header">
+                            <h2>모니터링 값 선택</h2>
+                        </div>
+                        <div class="select-group">
+                            <select name="" id="">
+                                <option value="">모터 전류(Arms)</option>
+                                <option value="">모터 온도(Arms)</option>
+                                <option value="">모터 토크량(Arms)</option>
+                            </select>
+                        </div>
+                    </section>
+                </div>
+                <div class="col-4">
+                    <section class="cm-card">
+                        <div class="cm-card-header">
+                            <h2>Alarm Status Log</h2>
+                        </div>
+                        <ul class="log-list">
+                            <li>20240510 10:34:42   CRI   #1 Robot   모터 전류(Arms)  35.2 mA</li>
+                            <li>20240510 10:34:42   CRI   #1 Robot   모터 전류(Arms)  35.2 mA</li>
+                            <li>20240510 10:34:42   CRI   #1 Robot   모터 전류(Arms)  35.2 mA</li>
+                            <li>20240510 10:34:42   CRI   #1 Robot   모터 전류(Arms)  35.2 mA</li>
+                            <li>20240510 10:34:42   CRI   #1 Robot   모터 전류(Arms)  35.2 mA</li>
+                            <li>20240510 10:34:42   CRI   #1 Robot   모터 전류(Arms)  35.2 mA</li>
+                        </ul>
+                    </section>
+                </div>
+            </div>
+            
+        </main>
+
+    </div>
+
+    
+    <div class="modal fade" id="userNewDataModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered cm-modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">사용자 신규 생성</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="cm-table">
+                        <table>
+                            <tr>
+                                <th>사용자 이름</th>
+                                <td>
+                                    <input type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>소속</th>
+                                <td>
+                                    <input type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>ID</th>
+                                <td>
+                                    <input type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>PW</th>
+                                <td>
+                                    <input type="password">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>전화번호</th>
+                                <td>
+                                    <input type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>이메일</th>
+                                <td>
+                                    <input type="text">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">취소</button>
+                    <button type="button" class="btn btn-primary">신규생성</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="userEditDataModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered cm-modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">사용자 수정</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="cm-table">
+                        <table>
+                            <tr>
+                                <th>사용자 이름</th>
+                                <td>
+                                    <input type="text" value="홍길동">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>소속</th>
+                                <td>
+                                    <input type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>ID</th>
+                                <td>
+                                    <input type="text" value="hong12341">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>PW</th>
+                                <td>
+                                    <input type="password">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>전화번호</th>
+                                <td>
+                                    <input type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>이메일</th>
+                                <td>
+                                    <input type="text">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">취소</button>
+                    <button type="button" class="btn btn-primary">수정</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="userDelDataModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered cm-modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">사용자 삭제</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="cm-table">
+                        <table>
+                            <tr>
+                                <th>사용자 이름</th>
+                                <td>
+                                    <input type="text" value="홍길동" disabled>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>소속</th>
+                                <td>
+                                    <input type="text" value="MI 공정팀" disabled>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>ID</th>
+                                <td>
+                                    <input type="text" value="acab12345" disabled>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>PW</th>
+                                <td>
+                                    <input type="password"  value="acab12345" disabled>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>전화번호</th>
+                                <td>
+                                    <input type="text"  value="010-1234-1234" disabled>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>이메일</th>
+                                <td>
+                                    <input type="text"  value="acvdf@bnaver.com" disabled>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">취소</button>
+                    <button type="button" class="btn btn-primary">신규생성</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="lib/bootstrap.bundle.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width,viewport-fit=cover,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>Robot Monitoring System</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="header">
+            <a href="#" class="header-logo">Robot Monitoring System</a>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">Robot Monitoring</a>
+                    </li>
+                    <li>
+                        <a href="#">Statistics data</a>
+                    </li>
+                    <li class="active">
+                        <a href="#">Alarm Setting</a>
+                    </li>
+                    <li>
+                        <a href="#">Robot Setting</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="user">
+                <li>Admin(홍길동)</li>
+                <li><a href="#">로그아웃</a></li>
+            </ul>
+        </header>
+
+        <main>
+            <h1>Alarm Setting</h1>
+            <section class="cm-card">
+                <div class="cm-card-header">
+                    <div class="cm-search-wrap">
+                        <div class="select-group">
+                            <select name="" id="">
+                                <option value="">감시 로봇 선택</option>
+                            </select>
+                        </div>
+                        <div class="select-group">
+                            <select name="" id="">
+                                <option value="">모니터링 값</option>
+                            </select>
+                        </div>
+                        <button type="button" class="btn-search">검색</button>
+                    </div>
+                </div>
+                <div class="cm-table scroll-y max-h">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th rowspan="2">Robot Name</th>
+                                <th rowspan="2">모니터링 값</th>
+                                <th rowspan="2">모터</th>
+                                <th colspan="6">알림설정</th>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <th>CRI</th>
+                                <th>MAJ</th>
+                                <th>MIN</th>
+                                <th>NOR</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td rowspan="16">Robot #1</td>
+                                <td rowspan="16">모터 전류</td>
+                                <td rowspan="2">JT 1</td>
+                                <td>
+                                    + 피크
+                                    <!-- <button type="button" class="btn-plus"><i class="ico i-plus"></i>피크</button> -->
+                                </td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td rowspan="2">
+                                    <button type="button" class="btn-save">SAVE</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    - 피크
+                                    <!-- <button type="button" class="btn-minus"><i class="ico i-minus"></i>피크</button> -->
+                                </td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2">JT 2</td>
+                                <td>
+                                    <button type="button" class="btn-plus"><i class="ico i-plus"></i>피크</button>
+                                </td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td rowspan="2">
+                                    <button type="button" class="btn-save">SAVE</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button type="button" class="btn-minus"><i class="ico i-minus"></i>피크</button>
+                                </td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2">JT 3</td>
+                                <td>
+                                    <button type="button" class="btn-plus"><i class="ico i-plus"></i>피크</button>
+                                </td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td rowspan="2">
+                                    <button type="button" class="btn-save">SAVE</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button type="button" class="btn-minus"><i class="ico i-minus"></i>피크</button>
+                                </td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2">JT 4</td>
+                                <td>
+                                    <button type="button" class="btn-plus"><i class="ico i-plus"></i>피크</button>
+                                </td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td rowspan="2">
+                                    <button type="button" class="btn-save">SAVE</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button type="button" class="btn-minus"><i class="ico i-minus"></i>피크</button>
+                                </td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2">JT 5</td>
+                                <td>
+                                    <button type="button" class="btn-plus"><i class="ico i-plus"></i>피크</button>
+                                </td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td rowspan="2">
+                                    <button type="button" class="btn-save">SAVE</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button type="button" class="btn-minus"><i class="ico i-minus"></i>피크</button>
+                                </td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2">JT 6</td>
+                                <td>
+                                    <button type="button" class="btn-plus"><i class="ico i-plus"></i>피크</button>
+                                </td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td rowspan="2">
+                                    <button type="button" class="btn-save">SAVE</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button type="button" class="btn-minus"><i class="ico i-minus"></i>피크</button>
+                                </td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2">JT 7</td>
+                                <td>
+                                    <button type="button" class="btn-plus"><i class="ico i-plus"></i>피크</button>
+                                </td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td rowspan="2">
+                                    <button type="button" class="btn-save">SAVE</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button type="button" class="btn-minus"><i class="ico i-minus"></i>피크</button>
+                                </td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                            </tr>
+                            <tr>
+                                <td rowspan="2">JT 8</td>
+                                <td>
+                                    <button type="button" class="btn-plus"><i class="ico i-plus"></i>피크</button>
+                                </td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td rowspan="2">
+                                    <button type="button" class="btn-save">SAVE</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <button type="button" class="btn-minus"><i class="ico i-minus"></i>피크</button>
+                                </td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                                <td>0.0300</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination">
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Previous">
+                                <span aria-hidden="true"><i class="ico i-arrow-left"></i></span>
+                            </a>
+                        </li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item">
+                            <a class="page-link" href="#" aria-label="Next">
+                                <span aria-hidden="true"><i class="ico i-arrow-right"></i></span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <div class="modal fade" id="userNewDataModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered cm-modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">사용자 신규 생성</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="cm-table">
+                        <table>
+                            <tr>
+                                <th>사용자 이름</th>
+                                <td>
+                                    <input type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>소속</th>
+                                <td>
+                                    <input type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>ID</th>
+                                <td>
+                                    <input type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>PW</th>
+                                <td>
+                                    <input type="password">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>전화번호</th>
+                                <td>
+                                    <input type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>이메일</th>
+                                <td>
+                                    <input type="text">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">취소</button>
+                    <button type="button" class="btn btn-primary">신규생성</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="userEditDataModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered cm-modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">사용자 수정</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="cm-table">
+                        <table>
+                            <tr>
+                                <th>사용자 이름</th>
+                                <td>
+                                    <input type="text" value="홍길동">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>소속</th>
+                                <td>
+                                    <input type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>ID</th>
+                                <td>
+                                    <input type="text" value="hong12341">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>PW</th>
+                                <td>
+                                    <input type="password">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>전화번호</th>
+                                <td>
+                                    <input type="text">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>이메일</th>
+                                <td>
+                                    <input type="text">
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">취소</button>
+                    <button type="button" class="btn btn-primary">수정</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="userDelDataModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered cm-modal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">사용자 삭제</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="cm-table">
+                        <table>
+                            <tr>
+                                <th>사용자 이름</th>
+                                <td>
+                                    <input type="text" value="홍길동" disabled>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>소속</th>
+                                <td>
+                                    <input type="text" value="MI 공정팀" disabled>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>ID</th>
+                                <td>
+                                    <input type="text" value="acab12345" disabled>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>PW</th>
+                                <td>
+                                    <input type="password" value="acab12345" disabled>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>전화번호</th>
+                                <td>
+                                    <input type="text" value="010-1234-1234" disabled>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>이메일</th>
+                                <td>
+                                    <input type="text" value="acvdf@bnaver.com" disabled>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">취소</button>
+                    <button type="button" class="btn btn-primary">신규생성</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="lib/bootstrap.bundle.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>
