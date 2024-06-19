@@ -318,6 +318,11 @@ h1 {
     height: calc(100vh - 300px);
 }
 
+.cm-table.min-h {
+    height: calc(100vh - 600px);
+}
+
+
 .cm-table table {
     border-collapse: collapse;
     width: 100%;
@@ -422,6 +427,7 @@ button {
     color: #6D6D6D;
     font-size: var(--text-md);
     padding: 4px 40px;
+    height: 40px;
 }
 
 .btn-excel {
@@ -485,51 +491,28 @@ button {
     height: 12px;
     width: 12px;
 }
+
+.i-plus-g {
+    background: url(../img/ico/i-plus-g.png);
+    height: 12px;
+    width: 12px;
+}
 /* **************************************** *
  * input
  * **************************************** */
-.check-group {
-    align-items: center;
-    display: flex;
-}
-
-.check-group input {
-    display: none;
-}
-
-.check-group label {
-    align-items: flex-start;
-    font-size: 1rem;
-    display: flex;
-    gap: 4px;
-}
-
-.check-group label::before {
-    background: url(../img/ico/i-checkbox.png) no-repeat;
-    background-size: cover;
-    content: '';
-    flex: 0 0 auto;
-    display: inline-block;
-    height: 16px;
-    margin: 4px 0 0 0;
-    width: 16px;
-}
-
-.check-group input:checked+label::before {
-    background: url(../img/ico/i-checkbox-checked.png) no-repeat;
-    background-size: cover;
-}
 
 /* select */
 .select-group {
+    align-items: center;
     display: flex;
-    flex-direction: column;
     gap: 8px;
 }
 
 .select-group label {
-    font-size: 1rem;
-    font-weight: 800;
+    color: var(--cm-primary-dark);
+    font-size: var(--text-md);
+    font-weight: 500;
+    width: 160px;
 }
 
 .select-group select {

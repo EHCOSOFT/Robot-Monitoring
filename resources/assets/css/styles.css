@@ -29,6 +29,78 @@
     gap: 12px;
 }
 
-.cm-search-wrap .select-group {
+.cm-search-wrap .select-group select {
     width: 200px;
+}
+
+.robot-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    height: 202px;
+    overflow-y: scroll;
+}
+
+.robot-group::-webkit-scrollbar {
+    background: none;
+    width: 4px;
+}
+
+.robot-group::-webkit-scrollbar-thumb {
+    background: #d9d9d9;
+    border-radius: 100px;
+}
+
+.robot-management {
+    display: flex;
+    gap: 4px;
+}
+
+.robot-management input {
+    border-radius: 4px;
+    height: 34px;
+    text-align: center;
+}
+
+.robot-management button.btn-edit,
+.robot-management button.btn-del {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    font-size: var(--text-md);
+    gap: 2px;
+    justify-content: center;
+    height: 34px;
+}
+
+.robot-management button.cm-btn-gray {
+    align-items: center;
+    border-radius: 4px;
+    display: flex;
+    flex: 1;
+    gap: 2px;
+    justify-content: center;
+}
+
+.disk h3 {
+    align-items: center;
+    display: flex;
+    font-size: var(--text-md);
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.disk-box {
+    border: 1px solid #e2e2e2;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.disk-box h3 {
+    margin: 0 0 16px 0;
+}
+
+.disk-box button {
+    height: 40px;
+    padding: 0 2rem;
 }

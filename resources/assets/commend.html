@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width,viewport-fit=cover,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <title>Robot Monitoring System</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <header class="header">
+            <a href="#" class="header-logo">Robot Monitoring System</a>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">Robot Monitoring</a>
+                    </li>
+                    <li>
+                        <a href="#">Statistics data</a>
+                    </li>
+                    <li>
+                        <a href="#">Alarm Setting</a>
+                    </li>
+                    <li class="active">
+                        <a href="#">Robot Setting</a>
+                    </li>
+                    <li>
+                        <a href="#">Commend</a>
+                    </li>
+                </ul>
+            </nav>
+            <ul class="user">
+                <li>Admin(홍길동)</li>
+                <li><a href="#">로그아웃</a></li>
+            </ul>
+        </header>
+
+        <main>
+            <h1>Robot Setting</h1>
+            <div class="row">
+                <div class="col-6">
+                    <div class="cm-card">
+                        <div class="cm-card-header">
+                            <h2>Robot command</h2>
+                        </div>
+                        <div class="select-group">
+                            <select name="" id="">
+                                <option value="">로봇선택</option>
+                            </select>
+                            <button type="button" class="cm-btn-gray">접속</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="cm-card disk">
+                        <div class="cm-card-header">
+                            <h2>Disk command</h2>
+                        </div>
+                        <div class="select-group">
+                            <select name="" id="">
+                                <option value="">Disk 선택</option>
+                            </select>
+                        </div>
+                        <h3>DISK 사용량<span>72 GB/140GB</span></h3>
+                        <div class="disk-box">
+                            <h3>DISK 용량 제어</h3>
+                            <div class="cm-table">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th>구분</th>
+                                            <th>기준</th>
+                                            <th></th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>데이터 백업</td>
+                                            <td>
+                                                <div class="select-group">
+                                                    <select name="" id="">
+                                                        <option value="">Today - 5days</option>
+                                                    </select>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <button type="button" class="btn-plus">바로실행</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>알림 데이터 백업</td>
+                                            <td>
+                                                <div class="select-group">
+                                                    <select name="" id="">
+                                                        <option value="">Today - 5days</option>
+                                                    </select>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <button type="button" class="btn-plus">바로실행</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>백업 데이터 삭제</td>
+                                            <td>
+                                                <div class="select-group">
+                                                    <select name="" id="">
+                                                        <option value="">Today - 5days</option>
+                                                    </select>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <button type="button" class="btn-plus">바로실행</button>
+                                            </td>
+                                        </tr>
+
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+        </main>
+
+    </div>
+
+    <script src="lib/bootstrap.bundle.min.js"></script>
+    <script src="js/common.js"></script>
+</body>
+
+</html>
